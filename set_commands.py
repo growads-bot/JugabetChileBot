@@ -1,5 +1,6 @@
 from aiogram import Bot, Dispatcher, executor, types
-import asyncio
+
+BOT_TOKEN = "8180281549:AAHL6nMzLtAorkKKxKA9iDsHhvxEtVdKVfc"
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher(bot)
@@ -14,19 +15,5 @@ async def start_handler(message: types.Message):
     )
     await message.answer("¡Bienvenido a Jugabet Chile! Elige tu bono para empezar a jugar:", reply_markup=keyboard)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
-
-
-
-BOT_TOKEN = "8180281549:AAHL6nMzLtAorkKKxKA9iDsHhvxEtVdKVfc"
-bot = Bot(token=BOT_TOKEN)
-
-async def set_commands():
-    commands = [
-        types.BotCommand(command="start", description="🚀 Iniciar y descubrir bonos"),
-    ]
-    await bot.set_my_commands(commands)
-
-if __name__ == '__main__':
-    asyncio.run(set_commands())
