@@ -1,7 +1,7 @@
 from aiogram import Bot, types
 import asyncio
 
-BOT_TOKEN = "тут_твій_токен_бота"
+BOT_TOKEN = "8180281549:AAHL6nMzLtAorkKKxKA9iDsHhvxEtVdKVfc"
 bot = Bot(token=BOT_TOKEN)
 
 async def set_commands():
