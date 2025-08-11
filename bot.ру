@@ -3,7 +3,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO)
 
-BOT_TOKEN = "8180281549:AAHL6nMzLtAorkKKxKA9iDsHhvxEtVdKVfc"
+BOT_TOKEN = "8180281549:AAE0Iad85i0vmzuTBRYWKZgPdRVFwJF6vjE"
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher(bot)
